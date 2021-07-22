@@ -8,7 +8,7 @@ import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import SvgIcon from '@material-ui/core/SvgIcon';
-import { ReactComponent as FoxMaskIcon } from './fox-mask.svg';
+import { ReactComponent as FoxMaskIcon } from '../fox-mask.svg';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
