@@ -1,12 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Routes from './components/Routes';
-import firebase from 'firebase/app'
-import fireBaseKeys  from './config/keys'
+import firebase from 'firebase/app';
+import fireBaseKeys from './config/keys';
 
 function App() {
   if (!firebase.apps.length) {
-    console.log("Connected with Firebase");
+    console.log('Connected with Firebase');
     firebase.initializeApp(fireBaseKeys.firebaseConfig);
   }
   return (
