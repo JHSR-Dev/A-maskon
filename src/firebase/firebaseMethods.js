@@ -9,10 +9,12 @@ export default async function getMasks() {
     const maskSnapshot = await maskCollectionRef.get();
     let allMasks = [];
 
-    await maskSnapshot.docs.map((doc) => allMasks.push(doc.data()));
+    maskSnapshot.docs.map((doc) => allMasks.push(doc.data()));
 
     return allMasks;
   } catch (err) {
     console.log(err);
   }
 }
+
+
