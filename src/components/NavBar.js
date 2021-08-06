@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     color: 'white',
     background:'black',
-    boxShadow: '0 3px 5px 2px rgba(0, 0, 300, .4)',
+    boxShadow: '0 3px 5px 2px rgba(30, 30, 30, .6)',
   },
   searchBar:{
     color:'white',

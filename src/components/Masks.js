@@ -16,19 +16,21 @@ const useStyles = makeStyles({
   root: {
     maxHeight:600,
     maxWidth:600,
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)', 
+    background: 'linear-gradient(60deg, #485875 50%, #b0bbcf 80%)', 
     border: 0,
-    borderRadius: 5,
-    boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
+    borderRadius: 10,
+    boxShadow: '0 3px 5px 2px rgba(0, 0, 30, .5)',
+    margin: '1.5em',
+    color:'white',
   },
   media: {
-    height: 300,
-    width: 250,
+    height: 200,
+    width: 190,
+    margin: '1em'
   },
   addToCart: {
     padding: 10,
-    
-    
+    color:'white',
   }
 });
 
@@ -66,8 +68,8 @@ const Masks = () => {
               ${maskObj.price}
               </Typography>
               <CardActions>
-                <IconButton className={classes.addToCart}>
-                  <AddShoppingCartIcon />
+                <IconButton>
+                  <AddShoppingCartIcon className={classes.addToCart}/>
                   <Typography>
                   Add to Cart
                 </Typography>
