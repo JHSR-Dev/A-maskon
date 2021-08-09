@@ -13,10 +13,9 @@ const Routes = () => {
       <Route exact path='/cart' component={Cart} />
       <Route exact path='/profile' component={Profile} />
       <Route
-        exact
+        
         path='/maskDetails'
-        render={(routeProps) => <SingleMask {...routeProps} />}
-      />
+        component={SingleMask} />
     </Switch>
   );
 };

@@ -62,7 +62,7 @@ const Masks = (props) => {
               <Card className={classes.root}>
                 <CardMedia className={classes.media} image={maskObj.imageUrl} />
                 <CardContent>
-                  <Typography component={Link} mask={maskObj} to='/maskDetails'>
+                  <Typography component={Link} to={{pathname: `/maskDetails`, mask: maskObj}}>
                     {maskObj.name}
                   </Typography>
                   <Typography>${maskObj.price}</Typography>
