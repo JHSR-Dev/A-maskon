@@ -3,6 +3,7 @@ import LandingPage from './LandingPage';
 import Masks from './Masks';
 import Cart from './Cart';
 import Profile from './Profile';
+import SingleMask from './SingleMask';
 
 const Routes = () => {
   return (
@@ -11,6 +12,11 @@ const Routes = () => {
       <Route exact path='/masks' component={Masks} />
       <Route exact path='/cart' component={Cart} />
       <Route exact path='/profile' component={Profile} />
+      <Route
+        exact
+        path='/maskDetails'
+        render={(routeProps) => <SingleMask {...routeProps} />}
+      />
     </Switch>
   );
 };
