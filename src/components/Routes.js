@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import Masks from './Masks';
 import Cart from './Cart';
@@ -13,9 +13,10 @@ const Routes = () => {
       <Route exact path='/cart' component={Cart} />
       <Route exact path='/profile' component={Profile} />
       <Route
-        
         path='/maskDetails'
-        component={SingleMask} />
+        render={(routeProps) => <SingleMask {...routeProps} />}
+      />
+      <Route component={Masks} />
     </Switch>
   );
 };
